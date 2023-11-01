@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main,
+.container{
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+header{
+    background: url(../images/banner.jpg) no-repeat center;
+    height: 60vh;
+    position: relative;
+}
+header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background:#00000059;
+    height: 100%;
+}
+nav{
+    /* background-color: #ccc; */
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo h1 a{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    margin:  10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .3s;
+}
+nav ul li a:hover{
+    color: #0c999e;
+}
+
+header .btn2{
+    background-color: #02aff3;
+}
+.menu{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.offcanvas {
+    background: #ffffff9e;
+}
+.offcanvas h5{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+.offcanvas-body ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.offcanvas-body ul li{
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+.offcanvas-body ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: all .3s;
+}
+.offcanvas-body ul li a:hover{
+    color: #2c2c2c;
+}
+@media only screen and (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px) {
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media only screen and (min-width: 768px) {
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media only screen and (min-width: 992px) {
+    nav ul{
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .menu{
+        display: none;
+    }
+}
+/* end header */
+
+/* start person-info */
+.person-info{
+    padding: 50px 0;
+}
+.person-info .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.person-info .container .box{
+    margin: 0 10px;
+    width: calc(100%/2);
+}
+.person-info .container .box h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.person-info .container .box p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #3c3c3c;
+}
+@media only screen and (max-width: 600px) {
+    .person-info .container{
+        flex-direction: column;
+    }
+    .person-info .container .box{
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .person-info .container{
+        flex-direction: column;
+    }
+    .person-info .container .box{
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .person-info .container{
+        flex-direction: column;
+    }
+    .person-info .container .box{
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .person-info .container{
+        flex-direction: row;
+    }
+    .person-info .container .box{
+        margin: 10px;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .person-info .container{
+        flex-direction: row;
+    }
+    .person-info .container .box{
+        margin: 10px;
+        width: 50%;
+    }
+}
+/* end person-info */
+
+/* start info */
+.info{
+    padding: 50px 0;
+}
+.info .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info .container .box{
+    margin: 0 10px;
+    width: calc(100%/4);
+}
+.info .container .box i{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.info .container .box h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.info .container .box p{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #3c3c3c;
+}
+@media only screen and (max-width: 600px) {
+    .info .container{
+        flex-direction: column;
+    }
+    .info .container .box{
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .info .container{
+        flex-direction: column;
+    }
+    .info .container .box{
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .info .container{
+        flex-flow: row wrap;
+    }
+    .info .container .box{
+        margin: 10px;
+        width: 45%;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .info .container{
+        flex-flow: nowrap wrap;
+    }
+    .info .container .box{
+        width: 20%;
+        text-align: left;
+    }
+}
+/* end info */
+
+/* start Customers */
+.Customers{
+    padding: 50px 0;
+    background: url(../images/banner.jpg) no-repeat center/cover;
+    position: relative;
+}
+.Customers::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:#00000059
+}
+.Customers .container h3{
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Customers .container h3 span{
+    font-weight: 600;
+}
+.Customers .container .fa-boxs{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: relative;
+}
+.Customers .container .fa-boxs .box{
+    width: calc(100%/3);
+    background-color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 3px;
+}
+.Customers .container .fa-boxs .box img{
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 30px 0 0;
+}
+.Customers .container .fa-boxs .box h3{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.Customers .container .fa-boxs .box p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.Customers .container .fa-boxs .box .info-custom{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .Customers .container .fa-boxs{
+        flex-direction: column;
+    }
+    .Customers .container .fa-boxs .box{
+        width: 100%
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Customers .container .fa-boxs{
+        flex-direction: column;
+    }
+    .Customers .container .fa-boxs .box{
+        width: 100%
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Customers .container .fa-boxs{
+        flex-flow: row wrap;
+    }
+    .Customers .container .fa-boxs .box{
+        width: 45%
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Customers .container .fa-boxs{
+        flex-flow: row nowrap;
+    }
+}
+/* end Customers */
+
+
+/* start Team-Professionals */
+.Team-Professionals{
+    padding: 50px 0;
+}
+.Team-Professionals h3{
+    position: relative;
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Team-Professionals h3 span{
+    font-weight: 600;
+}
+.Team-Professionals .container .fa-boxs{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.Team-Professionals .container .fa-boxs .box{
+    width: 35%;
+}
+.Team-Professionals .container .fa-boxs .box h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.Team-Professionals .container .fa-boxs .box p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+.Team-Professionals .container .fa-boxs .info-person{
+    width: 60%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.Team-Professionals .container .fa-boxs .info-person .box{
+    width: calc(95%/3);
+    margin: 20px 0;
+    text-align: center;
+}
+.Team-Professionals .container .fa-boxs .info-person .box img{
+    width: 100%;
+}
+.Team-Professionals .container .fa-boxs .info-person .box h2{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.Team-Professionals .container .fa-boxs .info-person .box p{
+    font-weight: normal;
+    font-size: 18px;
+    margin: 10px 0;
+}
+@media only screen and (max-width: 600px) {
+    .Team-Professionals .container .fa-boxs{
+        flex-direction: column;
+    }
+    .Team-Professionals .container .fa-boxs .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Team-Professionals .container .fa-boxs{
+        flex-direction: column;
+    }
+    .Team-Professionals .container .fa-boxs .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Team-Professionals .container .fa-boxs{
+        flex-direction: row;
+    }
+    .Team-Professionals .container .fa-boxs .box{
+        width: 35%;
+    }
+    .Team-Professionals .container .fa-boxs .info-person{
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Team-Professionals .container .fa-boxs{
+        flex-direction: row;
+    }
+    .Team-Professionals .container .fa-boxs .box{
+        width: 35%;
+    }
+    .Team-Professionals .container .fa-boxs .info-person{
+        width: 60%;
+    }
+}
+/* end Team-Professionals */
+
+
+/* start Newsletter */
+.Newsletter{
+    padding: 50px 0;
+    background: #f3f3f3
+}
+.Newsletter h3{
+    position: relative;
+    color: #000;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.Newsletter h3 span{
+    font-weight: 600;
+}
+.Newsletter .container .fa-boxs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Newsletter .container .fa-boxs .box{
+    width: 45%;
+}
+.Newsletter .container .fa-boxs .box input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #656565;
+    font-size: 18px;
+    font-weight: 600;
+}
+.Newsletter .container .fa-boxs .box h2{
+    font-weight: 600;
+    font-size: 25px;
+}
+.Newsletter .container .fa-boxs .box p{
+    font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+    .Newsletter .container .fa-boxs{
+        flex-direction: column;
+    }
+    .Newsletter .container .fa-boxs .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Newsletter .container .fa-boxs{
+        flex-direction: column;
+    }
+    .Newsletter .container .fa-boxs .box{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .Newsletter .container .fa-boxs{
+        flex-direction: row;
+    }
+    .Newsletter .container .fa-boxs .box{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Newsletter .container .fa-boxs{
+        flex-direction: row;
+    }
+    .Newsletter .container .fa-boxs .box{
+        width: 45%;
+    }
+}
+/* end Newsletter */
+
+
+/* start footer  */
+footer{
+    padding: 50px 0 10px 0;
+    background-color: #0d0d0d;
+}
+footer .container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+footer .container .box{
+    width: calc(100%/4);
+    margin: 20px;
+}
+footer .container .box h2{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+footer .container .box p{
+    font-size: 16px;
+    color: #cacaca;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+footer .end{
+    text-align: center;
+    font-size: 16px;
+    color: #cacaca;
+    margin: 10px 0;
+    padding: 10px;
+}
+.hr{
+    border: 1px dashed #fff;
+}
+@media only screen and (max-width: 600px) {
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .box{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+@media only screen and (min-width: 600px) {
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .box{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+    footer .container{
+        flex-flow: row wrap;
+    }
+    footer .container .box{
+        width: 45%;
+        margin: 10px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    footer .container .box{
+        width: calc(90%/4);
+    }
+}
+/* end footer  */
